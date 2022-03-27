@@ -1,3 +1,4 @@
+/* General */
 :root {
   --primary-color: #ffffff;
   --secondary-color: #f5f4fa;
@@ -22,127 +23,6 @@ h6,
 p {
   margin-top: 0px;
   margin-bottom: 0px;
-}
-
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.top-line {
-  display: flex;
-  align-items: center;
-}
-
-.site-nav {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  margin-top: 24px;
-  margin-bottom: 24px;
-
-  font-family: Raleway;
-  color: var(--secondaty-text-color);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-
-  display: inline-block;
-}
-
-.logocolor {
-  color: var(--mark-color);
-}
-
-.site-nav .list,
-.contacts .link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
-.navigation {
-  display: flex;
-  padding: 0px;
-}
-
-.navigation :not(:last-child) {
-  margin-right: 50px;
-}
-
-.contacts {
-  display: flex;
-  margin-left: auto;
-}
-
-.link,
-.logo {
-  text-decoration: none;
-}
-
-.logo {
-  margin-right: 93px;
-}
-
-.list {
-  list-style: none;
-}
-
-.iii {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0px;
-  margin-top: 94px;
-  margin-bottom: 0px;
-}
-
-.inside {
-  width: 270px;
-}
-
-.inside:not(:last-child) {
-  margin-right: 30px;
-}
-
-.site-nav .link {
-  color: var(--secondaty-text-color);
-}
-
-.site-nav .link:hover {
-  color: var(--mark-color);
-}
-
-.contacts .link {
-  color: var(--primary-text-color);
-}
-
-.contacts :not(:last-child) {
-  /* .contacts .link:not (:last-child) { */
-  margin-right: 50px;
-}
-
-.contacts .link:hover {
-  color: var(--mark-color);
-}
-
-.description {
-  text-transform: uppercase;
-}
-
-.mainbutton {
-  background: var(--mark-color);
-  color: #ffffff;
-  border: none;
-  font-size: 16px;
-  line-height: 1.9;
-  font-family: Roboto, sans-serif;
-  font-weight: 700;
 }
 
 h1 {
@@ -174,6 +54,165 @@ h3 {
   letter-spacing: 0.03em;
 }
 
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.link,
+.logo-top {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/* Header */
+.header-block {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo-top {
+  margin-top: 24px;
+  margin-bottom: 24px;
+
+  font-family: Raleway;
+  color: var(--secondaty-text-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+
+  display: inline-block;
+}
+
+.logocolor {
+  color: var(--mark-color);
+}
+
+.site-nav .list,
+.contacts .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.navigation {
+  display: flex;
+  padding: 0px;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.logo-top {
+  margin-right: 93px;
+}
+
+.site-nav .link {
+  color: var(--secondaty-text-color);
+}
+
+.site-nav .link:hover {
+  color: var(--mark-color);
+}
+
+.contacts .link {
+  color: var(--primary-text-color);
+}
+
+.contact-item:not(:last-child) {
+  /* .contacts .link:not (:last-child) { */
+  margin-right: 50px;
+}
+
+.contacts .link:hover {
+  color: var(--mark-color);
+}
+
+.website {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondaty-text-color);
+}
+
+/* footer */
+
+.bottom {
+  background-color: #2f303a;
+  color: #ffffff;
+}
+
+.bottom .link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.bottom .logowhite {
+  font-family: Raleway;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.logowhite {
+  display: inline-block;
+  margin-top: 60px;
+}
+
+address {
+  color: #ffffff;
+  font-style: normal;
+}
+
+/* idex.html */
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+.features-item {
+  width: 270px;
+}
+
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.description {
+  text-transform: uppercase;
+}
+
+.mainbutton {
+  background: var(--mark-color);
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+  line-height: 1.9;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+}
+
 .hero {
   background-color: var(--hero-color);
   text-align: center;
@@ -184,6 +223,10 @@ h3 {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.features {
+  padding-top: 94px;
 }
 
 .job {
@@ -204,30 +247,11 @@ h3 {
   letter-spacing: 0.03em;
 }
 
-.bottom {
-  background-color: #2f303a;
-  color: #ffffff;
-}
-
-.bottom .link {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.bottom .logowhite {
-  font-family: Raleway;
-  color: var(--primary-color);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-}
-
-address {
-  color: #ffffff;
-  font-style: normal;
-}
 .portfolio {
-  margin-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+
 .ourtask {
   margin: 0px;
   padding: 0px;
@@ -235,18 +259,49 @@ address {
   margin-top: 50px;
 }
 
-.ourtask :not(:last-child) {
+.tasks-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.photosp {
+.photo-list {
   display: flex;
   margin-bottom: 0px;
   padding: 0px;
+  margin-top: 50px;
 }
 
-.photosp :not(:last-child) {
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--secondary-color);
+}
+
+.photo-item {
+  background-color: var(--primary-color);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.photo-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.real-adress {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.didgit-adress {
+  display: inline-block;
+  margin-top: 9px;
+}
+
+/* portfolio */
+.webtype {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 
 .secondbutton {
@@ -264,20 +319,4 @@ address {
 .secondbutton:hover {
   background-color: var(--mark-color);
   color: var(--primary-color);
-}
-
-.website {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--secondaty-text-color);
-}
-
-.webtype {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
 }
